@@ -258,18 +258,30 @@ nav {
 .atbalst{
     background-image: url("../img/Yellow-bg.png");
     margin-top: 9.375em;
-    padding: 40px;
+    padding-top: 40px;
     height: 30em;
     .logos{
         display: flex;
-        height:22em;
+        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 3.5rem auto 11rem;
+        width: 100%;
+        justify-content: space-around;
+        .linearis{
+            min-width: 6%;
+            width: 6%;
+        }
         img{
-            width: 25%;
-            height: 80px;
-            flex: 50%;
-        }   
+            width: 15%;
+            max-width: 40%;
+            height: auto;
+            max-height: 100%;
+            vertical-align: middle;
+            margin: 0 2.3rem 0 2.4rem;
+
+
+        }  
     }
     h3{
         text-transform: uppercase;
@@ -484,12 +496,11 @@ footer{
 }
 .atbalst{
     margin-top: 9.375em;
-    padding: 2.5em 2.5em;
+    flex-wrap: nowrap;
+    justify-content: center;
     .logos {
         align-items: center;
         img{
-        flex: 25%;
-        align-self: center;
         }
     }
 }

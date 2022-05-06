@@ -273,7 +273,7 @@ nav li a:hover {
 .atbalst {
   background-image: url("../img/Yellow-bg.png");
   margin-top: 9.375em;
-  padding: 40px;
+  padding-top: 40px;
   height: 30em;
 }
 
@@ -281,21 +281,33 @@ nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 22em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 3.5rem auto 11rem;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.atbalst .logos .linearis {
+  min-width: 6%;
+  width: 6%;
 }
 
 .atbalst .logos img {
-  width: 25%;
-  height: 80px;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  width: 15%;
+  max-width: 40%;
+  height: auto;
+  max-height: 100%;
+  vertical-align: middle;
+  margin: 0 2.3rem 0 2.4rem;
 }
 
 .atbalst h3 {
@@ -552,20 +564,16 @@ footer .footer-2 .p-2 {
   }
   .atbalst {
     margin-top: 9.375em;
-    padding: 2.5em 2.5em;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .atbalst .logos {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .atbalst .logos img {
-    -webkit-box-flex: 25%;
-        -ms-flex: 25%;
-            flex: 25%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
   footer {
     padding: 3.875em 1.25em 0 3.875em;

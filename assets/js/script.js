@@ -10,15 +10,3 @@ const mobileBtn = document.getElementById("mobile-cta")
         })
 
 
-myID = document.getElementById("customID");
-
-var myScrollFunc = function() {
-    var y = window.scrollY;
-    if (y >= 1) {
-    myID.className = "anchor show"
-    } else {
-    myID.className = "anchor hide"
-    }
-};
-
-window.addEventListener("scroll", myScrollFunc);
