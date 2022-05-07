@@ -79,6 +79,11 @@ nav {
             font-size: 1.3em;
             text-align: center;
             align-items: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
 
             &:hover {
                 font-weight: bold;
@@ -425,7 +430,7 @@ footer{
         height: auto;
         width: 100%;
         padding: 0;
-
+        a img.logo-2{display: none;}
         ul {
             display: flex;
         }
