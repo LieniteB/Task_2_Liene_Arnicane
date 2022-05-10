@@ -168,7 +168,7 @@ nav {
 }
 
 .buttons{
-    margin-top:120px;
+    margin-top:100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,10 +197,10 @@ nav {
 
             color: #FFFFFF;
 
-            padding:13px 50px ;
+            padding:13px 55px ;
             background-color: #FFA800;
             border: none;
-            border-radius: 20px;
+            border-radius: 30px;
         }
     }
 }
@@ -230,17 +230,22 @@ nav {
         border-radius: 6px;
         border:none;
         margin: 10px;
+
+        input#checkbox{
+            width: 20px;
+        }
     }
     #question {
-        padding-bottom: 232px;
+        padding-bottom: 200px;
     }
 
     p{
         margin: 10px;
         font-weight: 400;
         text-align: left;
+        font-size: 15px;
     }
-
+    
     .submit{
         background-color: #FFA800;
         font-family: 'Montserrat';
@@ -326,11 +331,10 @@ footer{
             margin-bottom: 1.5em;
         }
         ul li {
-            margin:10px;
+            margin-bottom:20px;
         span{ 
-            font-size: 18px;
+            font-size: 24px;
             line-height: 22px;
-            margin-bottom: 30px;
         }}
         .contacts{
             text-align: left;
@@ -353,7 +357,8 @@ footer{
         
         .links li {
             display: none;
-            margin:21px;
+            margin-bottom:21px;
+            font-size: 18px;
             a{
             color: white;
             list-style-type: none;
@@ -388,25 +393,6 @@ footer{
     }
 }
 
-.anchor {
-    position: fixed;
-    top: 20px;
-    left:20px;
-    width: 60px;
-    height: 60px;
-    border-radius:50%;
-    background:#2F4858;
-    z-index: 1;
-    transition: all 0.5s;
-}
-.hide {
-    opacity:0;
-    left:-100%;
-}
-.show {
-    opacity:1;
-    left:0;
-}
 //min 940px - navbar rada horizonālu scroll
 @media only screen and (min-width: 768px) {
      .navbar .container{
@@ -454,21 +440,40 @@ footer{
         }
     }
 .ripped{top: 60px;}
-.video .video-btn{width: 86px;}
+.video .video-btn{width: 100px;}
 .text{
     font-size: 18px;
     line-height: 22px;
     margin: auto;
-    width:60%;
+    width:50%;
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
 .gallery .image{flex:25%;}
 .ripped-3{top:-28px;}
-.buttons{flex-direction: row;}
+.buttons{
+    flex-direction: row;
+    font-size: 21px;
+    line-height: 36px;
+    margin-top: 93px;
+
+    .btn-1{
+        padding-left: 160px;
+        
+    }
+    .btn-2{
+        padding-right: 150px;
+    }
+}
 .form{
     display: block;
     text-align: center;
-    width: 612px;
+    width: 500px;
     margin:auto;
+    h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
     input{
         width: 612px;
     }
@@ -483,7 +488,8 @@ footer{
     }
     .submit{
         width: 182px;
-        padding: 10px 0px;
+        padding: 20px 0px;
+        font-size: 25px;
     }
     .first-row{
         width: 612px;
@@ -491,9 +497,11 @@ footer{
     }
     input#checkbox{
         text-align: left;
+        width: 15px;
     }
-    .checkbox{
+    label.checkbox{
         text-align:left;
+        font-size: 15px;
     }
     .submit{
         margin-top: 50px;
@@ -503,8 +511,10 @@ footer{
     margin-top: 9.375em;
     flex-wrap: nowrap;
     justify-content: center;
+    height: 25em;
     .logos {
         align-items: center;
+        height: 200px;
         img{
             max-width: 17.5%;
         }

@@ -181,7 +181,7 @@ nav li a:hover {
 }
 
 .buttons {
-  margin-top: 120px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,10 +218,10 @@ nav li a:hover {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-  padding: 13px 50px;
+  padding: 13px 55px;
   background-color: #FFA800;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .form {
@@ -251,14 +251,19 @@ nav li a:hover {
   margin: 10px;
 }
 
+.form input input#checkbox {
+  width: 20px;
+}
+
 .form #question {
-  padding-bottom: 232px;
+  padding-bottom: 200px;
 }
 
 .form p {
   margin: 10px;
   font-weight: 400;
   text-align: left;
+  font-size: 15px;
 }
 
 .form .submit {
@@ -361,13 +366,12 @@ footer .footer-1 .golden-logo img {
 }
 
 footer .footer-1 ul li {
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
 footer .footer-1 ul li span {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 22px;
-  margin-bottom: 30px;
 }
 
 footer .footer-1 .contacts {
@@ -393,7 +397,8 @@ footer .footer-1 .contacts .rekvizīti {
 
 footer .footer-1 .links li {
   display: none;
-  margin: 21px;
+  margin-bottom: 21px;
+  font-size: 18px;
 }
 
 footer .footer-1 .links li a {
@@ -431,29 +436,6 @@ footer .footer-2 .p-1 {
 footer .footer-2 .p-2 {
   float: right;
   margin-top: 0;
-}
-
-.anchor {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #2F4858;
-  z-index: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.hide {
-  opacity: 0;
-  left: -100%;
-}
-
-.show {
-  opacity: 1;
-  left: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -511,13 +493,15 @@ footer .footer-2 .p-2 {
     top: 60px;
   }
   .video .video-btn {
-    width: 86px;
+    width: 100px;
   }
   .text {
     font-size: 18px;
     line-height: 22px;
     margin: auto;
-    width: 60%;
+    width: 50%;
+    margin-top: 55px;
+    margin-bottom: 55px;
   }
   .gallery .image {
     -webkit-box-flex: 25%;
@@ -532,12 +516,25 @@ footer .footer-2 .p-2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    font-size: 21px;
+    line-height: 36px;
+    margin-top: 93px;
+  }
+  .buttons .btn-1 {
+    padding-left: 160px;
+  }
+  .buttons .btn-2 {
+    padding-right: 150px;
   }
   .form {
     display: block;
     text-align: center;
-    width: 612px;
+    width: 500px;
     margin: auto;
+  }
+  .form h2 {
+    font-size: 30px;
+    line-height: 36px;
   }
   .form input {
     width: 612px;
@@ -555,7 +552,8 @@ footer .footer-2 .p-2 {
   }
   .form .submit {
     width: 182px;
-    padding: 10px 0px;
+    padding: 20px 0px;
+    font-size: 25px;
   }
   .form .first-row {
     width: 612px;
@@ -563,9 +561,11 @@ footer .footer-2 .p-2 {
   }
   .form input#checkbox {
     text-align: left;
+    width: 15px;
   }
-  .form .checkbox {
+  .form label.checkbox {
     text-align: left;
+    font-size: 15px;
   }
   .form .submit {
     margin-top: 50px;
@@ -577,11 +577,13 @@ footer .footer-2 .p-2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 25em;
   }
   .atbalst .logos {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 200px;
   }
   .atbalst .logos img {
     max-width: 17.5%;
