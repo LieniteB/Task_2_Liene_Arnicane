@@ -103,7 +103,7 @@ nav li a:hover {
 
 .ripped {
   position: absolute;
-  top: 75px;
+  top: 50px;
   width: 100%;
   z-index: -1;
 }
@@ -116,6 +116,7 @@ nav li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  top: 0;
 }
 
 .video img {
@@ -197,6 +198,19 @@ nav li a:hover {
           flex-direction: column;
 }
 
+.buttons .btn-1 {
+  margin-bottom: 60px;
+}
+
+.buttons .btn-1 h3 {
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.buttons .btn-2 h3 {
+  margin-bottom: 35px;
+}
+
 .buttons div {
   text-align: center;
   -webkit-box-flex: 50%;
@@ -227,6 +241,7 @@ nav li a:hover {
 .form {
   margin-top: 150px;
   text-align: center;
+  margin: auto;
 }
 
 .form h2 {
@@ -234,8 +249,8 @@ nav li a:hover {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
-  margin-top: 150px;
+  margin-bottom: 20px;
+  margin-top: 125px;
 }
 
 .form input {
@@ -438,7 +453,7 @@ footer .footer-2 .p-2 {
   margin-top: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 782px) {
   .navbar .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,14 +473,18 @@ footer .footer-2 .p-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: none;
     position: unset;
     height: auto;
     width: 100%;
     padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
   }
   .navbar nav a img.logo-2 {
     display: none;
@@ -529,7 +548,7 @@ footer .footer-2 .p-2 {
   .form {
     display: block;
     text-align: center;
-    width: 500px;
+    width: 649px;
     margin: auto;
   }
   .form h2 {
@@ -589,7 +608,7 @@ footer .footer-2 .p-2 {
     max-width: 17.5%;
   }
   footer {
-    padding: 3.875em 1.25em 0 3.875em;
+    padding: 3.875em 3.875em 0 3.875em;
   }
   footer .footer-1 {
     -webkit-box-orient: horizontal;
@@ -624,7 +643,8 @@ footer .footer-2 .p-2 {
   }
   footer .footer-2 {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: none;
   }
 }
 
