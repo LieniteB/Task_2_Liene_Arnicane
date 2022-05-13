@@ -507,6 +507,10 @@ footer .footer-2 .p-2 {
     font-size: 18px;
     line-height: 22px;
   }
+  .navbar nav a.logo {
+    margin: 0;
+    padding: 0;
+  }
   .navbar nav ul.primary-nav {
     margin: 0;
   }
