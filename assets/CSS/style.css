@@ -459,6 +459,12 @@ footer .footer-2 .p-2 {
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar .container .logo img {
+    width: 160px;
+  }
+  .navbar .container a.logo {
+    margin-left: 40px;
+  }
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
@@ -496,8 +502,10 @@ footer .footer-2 .p-2 {
   }
   .navbar nav a {
     color: black;
-    font-size: 1em;
-    padding: .1em 1em;
+    padding: 0.75em;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -509,7 +517,7 @@ footer .footer-2 .p-2 {
     color: white;
   }
   .ripped {
-    top: 60px;
+    top: 85px;
   }
   .video .video-btn {
     width: 100px;
