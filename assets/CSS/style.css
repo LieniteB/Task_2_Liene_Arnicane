@@ -274,6 +274,17 @@ nav li a:hover {
   padding-bottom: 200px;
 }
 
+.form input#checkbox {
+  width: 15px;
+  float: left;
+  margin-right: 20px;
+}
+
+.form .check {
+  text-align: left;
+  font-size: 15px;
+}
+
 .form p {
   margin: 10px;
   font-weight: 400;
