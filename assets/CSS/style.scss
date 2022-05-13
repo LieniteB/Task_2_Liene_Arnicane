@@ -532,13 +532,15 @@ footer{
         text-align: center;
     }
     input#checkbox{
-        text-align: left;
         width: 15px;
+        float: left;
+        margin-right: 20px;
     }
-    label.checkbox{
-        text-align:left;
+    .check{
+        text-align: left;
         font-size: 15px;
     }
+    
     .submit{
         margin-top: 50px;
     }   

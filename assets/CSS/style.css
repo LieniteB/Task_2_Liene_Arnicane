@@ -601,10 +601,11 @@ footer .footer-2 .p-2 {
     text-align: center;
   }
   .form input#checkbox {
-    text-align: left;
     width: 15px;
+    float: left;
+    margin-right: 20px;
   }
-  .form label.checkbox {
+  .form .check {
     text-align: left;
     font-size: 15px;
   }
