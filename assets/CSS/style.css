@@ -539,18 +539,18 @@ footer .footer-2 .p-2 {
     line-height: 36px;
     margin-top: 93px;
   }
-  .buttons .btn-1 {
+  .buttons div.btn-1 {
     margin-bottom: 0;
     padding-left: 160px;
   }
-  .buttons .btn-1 h3 {
+  .buttons div.btn-1 h3 {
     margin-top: 20px;
     margin-bottom: 45px;
   }
-  .buttons .btn-2 {
+  .buttons div.btn-2 {
     padding-right: 150px;
   }
-  .buttons .btn-2 h3 {
+  .buttons div.btn-2 h3 {
     margin-bottom: 45px;
   }
   .form {
