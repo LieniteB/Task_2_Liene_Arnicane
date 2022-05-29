@@ -2,13 +2,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap');
 
 body {
-    background: white;
+    background:white;
     margin: 0;
     margin-right: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     display:flex;
 }
+
+h1 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 71px;
+
+    color: #2F4858;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+
+    color: #2F4858;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #2F4858;
+    text-transform: uppercase;
+}
+
+.text1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #2F4858;
+    text-align: center;
+}
+
+.text2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2F4858;
+    text-align: center;
+}
+
+.ideja-text {
+    text-align: center;
+}
+
 .navbar {
     background: white;
     nav {
@@ -73,7 +136,6 @@ nav {
 
         a {
             color: black;
-            text-decoration: none;
             display: block;
             padding: .5em;
             font-size: 1.3em;
@@ -88,6 +150,7 @@ nav {
             &:hover {
                 font-weight: bold;
             }
+            
         }
     }
 
@@ -333,9 +396,10 @@ nav {
 
 
 //footer
+.footer-color{background-color: white;}
 footer{
     background-image: url("../img/grey-bg.png");
-    background-color: #FFCB66;
+    background-color: #ffcb66;
     background-size: 100%;
     background-repeat: round;
     display: grid;
@@ -343,6 +407,7 @@ footer{
     color: white;
     padding: 3.875em 1.25em 0 1.25em;
     z-index: 5;
+    
     .footer-1{
         display:flex;
         justify-content: space-between;
@@ -415,8 +480,396 @@ footer{
 
     }
 }
+//ideja lapas stili
+.ideja-text {
+    h1 {
+        margin: 0;
+    }
 
-//min 940px - navbar rada horizonālu scroll
+    p.text2.text{
+        width: 60%;
+        margin: auto;
+        padding: 60px 20px;
+    }
+}
+
+.juris{
+    position: relative;
+    text-align: center;
+
+    p{
+        position: absolute;
+        top: 63%;
+        left:20%;
+        font-weight: bold;
+        color: white;
+        width: 60%;
+        
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .ripped-4{
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+    }
+    .juris-img{
+        width: 100%;
+        z-index: -3;  
+    }
+    .ripped-5 {
+        width: 100%;
+        z-index: 2;
+        position: relative;
+        top: -15px;
+    }
+}
+.slideshow {
+    .slide{
+        margin-left: auto;
+        margin-right: auto;
+        p{text-align: left;}
+    }
+    width: 50%;
+    margin: 150px;
+    position: relative;
+    text-align: left;
+    h3{
+        text-transform: none;
+    }
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 110%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-size: 35px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+
+    }
+    .next {
+        position: absolute;
+        right: 225px;
+    }
+    h3 {margin: 0;}
+    p {
+        margin: 10px;
+    }
+    .text-italics {
+        font-style: italic;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 782px) {
+    .juris {
+        .ripped-5{
+            top: -30px;
+        }
+    }
+    .ideja-text{
+        h1 {margin-top: 110px;}
+        p.text2.text {width: 45%;}
+        margin-bottom: 95px;
+        }
+    }
+
+
+//stili piesaki sapni
+.section-1 h1 {
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+.piesaki-sapni{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 0px;
+    .sapnis {
+        text-align: center;
+        width: 40%;
+    }
+    button {
+        cursor: pointer;
+        padding:13px 55px ;
+        background-color: #FFA800;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        margin: 50px;
+    }
+}
+
+.form-2 input.submit {
+    margin-bottom: 175px;
+}
+
+@media only screen and (min-width: 782px) {
+    .piesaki-sapni {
+        flex-direction: row;
+        .sapnis{
+            padding: 100px;
+            padding-bottom: 70px;
+            p {height: 200px;}
+        }
+    }
+    .form-2 h2{
+        margin-top: 50px;
+    }
+}
+//stili lapai uzņēmējiem
+.uznemejiem {
+    p{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+    }
+    h1 {
+        margin-top: 110px;
+    }
+}
+
+
+
+//stili lapai sapņu banka
+.sapnu-banka{
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+.merkis {
+    h2{
+        margin-top: 150px;
+        margin-bottom: 80px;
+    }
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4em 1.5em;
+    text-align: center;
+
+    img{
+        width: 12%;
+        max-height: 100%;
+    }
+    .content {
+        margin: 1.5em 0;
+    }
+}
+.misija {
+    h2{
+        margin-top:160px;
+        margin-bottom:50px;
+    }
+}
+
+.ainava {
+    background-image: url("../img/y-bg.png");
+    margin-bottom: 50px;
+    padding: 50px;
+    z-index: 2;
+    text-align: center;
+    img {
+        margin: 1.875em;
+    }
+    p {
+        color: white;
+    }
+}
+.sapnus-atlasis{
+    h2{
+        margin-top: 200px;
+    }
+}
+.atlais {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75em;
+    margin-bottom: 3.75em;
+    text-align: center;
+
+    
+}
+
+@media only screen and (min-width: 782px) {
+    .feature {
+        flex-direction: row;
+
+        img{
+            margin-left: 20em;
+            margin-right: 3.875em;
+            
+        }
+        .content {
+            width: 40%;
+            p{text-align: left;}
+        }
+    }
+    .feature.left {
+        flex-direction: row-reverse;
+        img{
+            margin-left: 3.875em;
+            margin-right: 20em;
+        }
+        .content p{
+            text-align: right;
+        }
+    }
+
+    .ainava {
+        margin-bottom: 150px;
+        padding-bottom: 60px;
+        margin-top:150px;
+        p {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .ainava-text{
+            margin-bottom: 10px;
+        }
+    }
+
+    .atlais{ 
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+
+        .atlasis{
+            width: 30%;
+            margin: 0 6em;
+        }
+    }
+    .btn-gap {
+        margin-bottom:9.375em;
+    }
+}
+
+//stili lapai 99 iedvesmas stāsti
+.title p{
+    margin: 80px 20px;
+}
+#grid,
+#more {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 14px;
+    margin: 1.25em;
+}
+
+#more {
+    display: none;
+}
+
+.cell {
+    background-image: url(../img/color-1845394.png);
+    width: 134px;
+    height: 134px;
+    color: white;
+    position: relative;
+    p{
+        position: absolute;
+        font-size: 2rem;
+        font-family:"Oswald";
+        top: 47%;
+        left: 75%;
+        
+    }
+}
+.stories{
+    margin-bottom: 120px;
+    text-align: center;
+    button {
+        cursor: pointer;
+        padding:13px 55px ;
+        background-color: #FFA800;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        margin: 50px;
+    }
+}
+.inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    .gradient {
+        background-image: linear-gradient(180deg, rgba(47, 72, 88, .8) 18.63%, 
+        rgba(47, 72, 88, 0) 49.21%);
+        z-index: 2;
+        
+    }
+    img{
+        z-index: -1;
+    }
+}
+.teksts{
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    span{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    p{
+        margin: 0;
+        font-family: "Montserrat";
+    }
+}
+
+@media only screen and (min-width: 600px){
+    #grid,
+    #more{
+        grid-template-columns: auto auto auto auto;
+    }
+    #more{display: none};
+}
+@media only screen and (min-width: 782px) {
+    #grid,
+    #more{
+        grid-template-columns: auto auto auto auto auto auto;
+        margin-left: 168px;
+        margin-right: 168px;
+    }
+    #more{display: grid;}
+    .stories{
+        margin-bottom: 120px;
+    }
+    .cell{
+        width: 160px;
+        height: 160px;
+    }
+    .stories button {
+        display: none;
+    }
+    .inner-container {
+        flex-direction: row;
+    }
+    .cell p {
+        top: 55%;
+        right: 20%;
+    }
+}
+
+//stili desktop galvenajai lapai
 @media only screen and (min-width: 782px) {
      .navbar .container{
          display: flex;
