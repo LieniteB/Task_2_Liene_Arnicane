@@ -67,7 +67,34 @@ h3 {
     color: #2F4858;
     text-align: center;
 }
+.active {text-decoration: underline solid #FFA800 15%;}
+.language{
+    position: relative;
+    display: inline-block;
+    margin-top: 13px;
+    a{
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        &:hover{
+            display: block;
+        }
+        a{
+            color: black;
+            padding: 5px 13px;
+            text-decoration: none;
+            display: block;
+        }
+        
+    }
+    &:hover .dropdown-content{
+        display: block;
+        
+    }
 
+}
 .ideja-text {
     text-align: center;
 }
@@ -148,7 +175,7 @@ nav {
             line-height: 22px;
 
             &:hover {
-                font-weight: bold;
+                text-decoration: underline solid #FFA800 15%;
             }
             
         }
