@@ -29,7 +29,13 @@
                         <li><a href="sapnu_banka.html">Sapņu banka</a></li>
                         <li><a href="sapnus_atbalsta.html">Sapņus atbalsta</a></li>
                         <li><a href="iedvesmas_stasti.html">99 iedvesmas stāsti</a></li>
-                        <li><a href="#">LV</a></li>
+                        <div class="language">
+                                <a href="#">LV</a>
+                                <div class="dropdown-content">
+                                <a href="#">EN</a>
+                                <a href="#">RU</a>
+                                </div>
+                        </div>
                     </ul>
 
                     </ul>
@@ -48,29 +54,30 @@
             <img class="ripped-4" src="assets/img/ripped 6 12.png" alt="">
             <img class="juris-img" src="assets/img/Juris.jpg" alt="">
             <!-- <img class="gradient" src="assets/img/Rectangle 38.png" alt=""> -->
-            <p class="text2">“Kopš 3 gadu vecuma mani ir audzinājusi mamma, pēc viņas piemēra esmu sapratis, cik sieviete ir spēcīga
+            <p class="text2">“Kopš 3 gadu vecuma mani ir audzinājusi mamma, pēc viņas piemēra esmu sapratis, cik
+                sieviete ir spēcīga
                 un varoša. Vēlos atlīdzināt un izveidot platformu, kurā satikties un palīdzēt cilvēkiem piepildīt savus
                 sapņus.”</p>
             <img class="ripped-5" src="assets/img/ripped 6 13.png" alt="">
         </section>
-        <section class="slideshow">
-            <div class="slide">
+
+        <div class="slideshow-container">
+            <div class="mySlides">
                 <h3>Ken Ludden</h3>
-                <p class="text2">Director, Margot Fonteyn Academy of Ballet</p>
-                <p class="text1 text-italics">For it is Juris work that is the
-                    light the human race needs so badly these days. His vision is inspired and talent is beyond
-                    measure.</p>
+                <p>Director, Margot Fonteyn Academy of Ballet</p>
+                <p class="italics">For it is Juris work that is the light the human race needs so badly these days. His
+                    vision is
+                    inspired and talent is beyond measure.</p>
             </div>
-            <!-- <div class="slide">
-                <h3>Lorem, ipsum.
-                </h3>
-                <p class="text2">Lorem ipsum dolor sit amet.</p>
-                <p class="text1 text-italics">Lorem, ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Porro, molestiae!</p>
-            </div> -->
-            <a class="prev" >&#10094;</a>
-            <a class="next" >&#10095;</a>
-        </section>
+            <div class="mySlides">
+                <h3>Something</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p class="italics">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas facere possimus
+                    dolorum quidem a nulla porro aut, incidunt iure laboriosam.</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
 
         <footer class="footer-color">
             <div class="footer-1">
@@ -112,5 +119,6 @@
                 <p class="p-2">Privātuma politika</p>
             </div>
         </footer>
+        <script src="assets/js/slide_script.js"></script>
         <script src="assets/js/script.js"></script>
     </div>
