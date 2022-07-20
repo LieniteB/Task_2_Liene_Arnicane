@@ -438,7 +438,55 @@ nav {
 }
 
 
+//cookie stili
+.cookie-container {
+    width: 820px;
+    display: flex;
+    position: fixed;
+    bottom: -100%;
+    left:0;
+    right:0;
+    background: #2F4858;
+    color: #ffffff;
+    padding: 30px 46px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 
+    transition: 400ms;
+
+    p{
+        color: #ffffff;
+        width: 450px;
+        a{
+            font-weight: bold;
+            color: #ffffff;
+        }
+    }
+
+    .cookie-button,
+    .cookie-button2{
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 10px 30px;
+        text-align: center;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cookie-button{
+        background-color:#FFA800;
+        color: #ffffff;
+    }
+}
+
+.cookie-container.cookie-active{
+    bottom: 0;
+}
 
 //footer
 .footer-color{background-color: white;}
@@ -526,6 +574,50 @@ footer{
 
     }
 }
+//404 lapas stili
+.error_404 {
+    background-color: rgba(255, 203, 102, 1);
+    padding: 175px;
+    text-align: center;
+    h1{
+        margin: 0;
+        color: white;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 142px;
+
+        text-align: center;
+    }
+    h3{text-transform: none;
+        font-weight: bold;
+    }
+    p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    button{
+        color: rgba(255, 203, 102, 1);
+        background-color: #ffffff;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 50px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 30px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
 //ideja lapas stili
 .ideja-text {
     h1 {
@@ -889,6 +981,35 @@ button.gm-control-active{
     background-color: rgba(255, 168, 0, 0.5);
     border-radius: 15px;
 }
+
+#map .gm-style .gm-style-mtc,
+#map .gm-style .gm-svpc,
+.gm-fullscreen-control {
+    display: none !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint {
+    margin-top: -190px !important;
+    left: -69px !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] {
+    width: auto !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] .gm-control-active {
+    margin-top: 21px !important;
+    width: 56.82px !important;
+    height: 57.14px !important;
+    background: rgba(255, 168, 0, 0.5) !important;
+    border-radius: 14px;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] .gm-control-active[aria-label="Zoom in"] {
+    margin-bottom: 20px !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] div {
+    display: none;
+}
+
 
 #map,
 #map-2,

@@ -140,3 +140,25 @@ function shows(anything) {
     document.querySelector(".dropbtn2").innerText = anything
     document.querySelector(".dropbtn2").style.fontWeight = "bold";
 }
+
+//cookie
+
+const cookieContainer = document.querySelector(".cookie-container")
+const cookieButton = document.querySelector(".cookie-button")
+const cookieButton2 = document.querySelector(".cookie-button2")
+
+
+cookieButton.addEventListener("click", () => {
+    cookieContainer.classList.remove("cookie-active");
+    localStorage.setItem("cookieBannerDisplayed", "true");
+});
+cookieButton2.addEventListener("click", () => {
+    cookieContainer.classList.remove("cookie-active");
+    localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+    // if(!localStorage.getItem("cookieBannerDisplayed")){
+    cookieContainer.classList.add("cookie-active");
+    // }
+}, 2000);
