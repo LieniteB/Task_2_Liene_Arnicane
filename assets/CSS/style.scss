@@ -1266,14 +1266,23 @@ footer.footer-color.map-footer {
     text-align: center;
     color: white;
     margin-bottom: 25px;
-    .gradient {
-        background-image: linear-gradient(180deg, rgba(47, 72, 88, .8) 18.63%, 
-        rgba(47, 72, 88, 0) 49.21%);
-        z-index: 2;
-        
+    .picture1{
+        background-image: linear-gradient(rgba(255,0,0,0), rgba(47, 72, 88, .8)),
+                        url("../img/juris-gogulis.png");
+        width: 280px;
+        height: 360px;
     }
-    img{
-        z-index: -1;
+    .picture2{
+        background-image: linear-gradient(rgba(255,0,0,0), rgba(47, 72, 88, .8)),
+                        url("../img/girts-cerins.png");
+        width: 280px;
+        height: 360px;
+    }
+    .picture3{
+        background-image: linear-gradient(rgba(255,0,0,0), rgba(47, 72, 88, .8)),
+                        url("../img/janis-zurgis.png");
+        width: 280px;
+        height: 360px;
     }
 }
 .teksts{
