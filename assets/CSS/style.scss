@@ -859,7 +859,7 @@ footer.footer-color{
         width: 120px;
         height: 100%;
         margin-right: 80px;
-        background-color: #FFA800;
+        
     }
 
     h3{
@@ -874,21 +874,19 @@ div.gm-style-iw-t::after {
     display: none;
 }
 div.gm-style-iw.gm-style-iw-c {
-    background-color: #FFA800;
-    opacity: 77%;
+    background-color: rgba(255, 168, 0, 0.5);
     border-radius: 20px;
 
 }
 div.gm-style-iw-d{
-    background-color: #FFA800;
-    
+
 }
-button.gm-ui-hover-effect{
-    display: none;
+#map-canvas .gm-style > .gmnoprint > .gmnoprint {
+    background-color: rgba(255, 168, 0, 0.5);
 }
-div button.gm-control-active{
-    background-color: #FFA800;
-    color: #FFA800;
+
+button.gm-control-active{
+    background-color: rgba(255, 168, 0, 0.5);
     border-radius: 15px;
 }
 
@@ -1016,10 +1014,7 @@ footer.footer-color.map-footer {
     margin-top:-20px;
     z-index: 30;
 }
-//kartei
-@media only screen and (min-width: 782px) {
 
-}
 
 //stili lapai 99 iedvesmas stāsti
 .title p{
