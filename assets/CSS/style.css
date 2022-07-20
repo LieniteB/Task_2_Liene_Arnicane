@@ -9,6 +9,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+div.container {
+  margin-left: 0;
+  margin-top: 0;
 }
 
 h1 {
@@ -194,32 +202,13 @@ nav li a:hover {
 
 .ripped {
   position: absolute;
-  top: 50px;
+  top: 75px;
   width: 100%;
-  z-index: -1;
+  z-index: 2;
 }
 
-.video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  top: 0;
-}
-
-.video img {
-  width: 100%;
-  z-index: -2;
-}
-
-.video .video-btn {
-  position: absolute;
-  width: 50px;
-  top: 40%;
-  text-align: center;
+.video video {
+  z-index: -10;
 }
 
 .text {
@@ -248,6 +237,7 @@ nav li a:hover {
 .gallery div img {
   width: 100%;
   height: auto;
+  margin-bottom: -5px;
 }
 
 .gallery .image {
@@ -342,6 +332,7 @@ nav li a:hover {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 125px;
+  color: #2F4858;
 }
 
 .form input {
@@ -355,10 +346,35 @@ nav li a:hover {
   border-radius: 6px;
   border: none;
   margin: 10px;
+  color: #2F4858;
 }
 
-.form input input#checkbox {
-  width: 20px;
+.form ::-webkit-input-placeholder {
+  color: #2F4858;
+  opacity: 1;
+}
+
+.form :-ms-input-placeholder {
+  color: #2F4858;
+  opacity: 1;
+}
+
+.form ::-ms-input-placeholder {
+  color: #2F4858;
+  opacity: 1;
+}
+
+.form ::placeholder {
+  color: #2F4858;
+  opacity: 1;
+}
+
+.form :-ms-input-placeholder {
+  color: #2F4858;
+}
+
+.form ::-ms-input-placeholder {
+  color: #2F4858;
 }
 
 .form #question {
@@ -369,6 +385,7 @@ nav li a:hover {
   width: 15px;
   float: left;
   margin-right: 20px;
+  margin-bottom: 80px;
 }
 
 .form .check {
@@ -376,11 +393,16 @@ nav li a:hover {
   font-size: 15px;
 }
 
+.form .check label {
+  color: #2F4858;
+}
+
 .form p {
   margin: 10px;
   font-weight: 400;
   text-align: left;
   font-size: 15px;
+  color: #2F4858;
 }
 
 .form .submit {
@@ -423,18 +445,18 @@ nav li a:hover {
       justify-content: space-around;
 }
 
-.atbalst .logos .linearis {
-  min-width: 6%;
-  width: 6%;
-}
-
 .atbalst .logos img {
-  width: 15%;
+  width: 20%;
   max-width: 40%;
   height: auto;
   max-height: 100%;
   vertical-align: middle;
   margin: 0 2.3rem 0 2.4rem;
+}
+
+.atbalst .logos .linearis {
+  min-width: 6%;
+  width: 6%;
 }
 
 .atbalst h3 {
@@ -576,7 +598,7 @@ footer .footer-2 .p-2 {
 
 .juris p {
   position: absolute;
-  top: 63%;
+  bottom: 10%;
   left: 20%;
   font-weight: bold;
   color: white;
@@ -584,8 +606,8 @@ footer .footer-2 .p-2 {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.125em;
+  line-height: 1.5em;
 }
 
 .juris .ripped-4 {
@@ -595,7 +617,8 @@ footer .footer-2 .p-2 {
 }
 
 .juris .juris-img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   z-index: -3;
 }
 
@@ -626,6 +649,11 @@ footer .footer-2 .p-2 {
   padding: 80px;
   text-align: left;
   width: 50%;
+  color: #2F4858;
+}
+
+.mySlides h3 {
+  text-transform: none;
 }
 
 .mySlides .italics {
@@ -672,6 +700,10 @@ footer .footer-2 .p-2 {
 }
 
 @media only screen and (min-width: 782px) {
+  .juris p {
+    font-size: 1.5em;
+    bottom: 20%;
+  }
   .juris .ripped-5 {
     top: -30px;
   }
@@ -710,17 +742,22 @@ footer .footer-2 .p-2 {
 
 .piesaki-sapni .sapnis {
   text-align: center;
-  width: 40%;
+  width: 70%;
 }
 
-.piesaki-sapni button {
+.piesaki-sapni .sapnis p {
+  color: #2F4858;
+}
+
+.piesaki-sapni .sapnis button.text2 {
   cursor: pointer;
   padding: 13px 55px;
   background-color: #FFA800;
   border: none;
   border-radius: 30px;
   color: white;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .form-2 input.submit {
@@ -791,7 +828,7 @@ footer .footer-2 .p-2 {
 }
 
 .feature img {
-  width: 12%;
+  width: 35%;
   max-height: 100%;
 }
 
@@ -836,7 +873,13 @@ footer .footer-2 .p-2 {
           flex-direction: column;
   margin-top: 3.75em;
   margin-bottom: 3.75em;
+  margin-left: 3em;
+  margin-right: 3em;
   text-align: center;
+}
+
+footer.footer-color {
+  margin-top: 120px;
 }
 
 @media only screen and (min-width: 782px) {
@@ -849,6 +892,7 @@ footer .footer-2 .p-2 {
   .feature img {
     margin-left: 20em;
     margin-right: 3.875em;
+    width: 10%;
   }
   .feature .content {
     width: 40%;
@@ -979,9 +1023,9 @@ div button.gm-control-active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   margin: 30px;
   display: none;
 }
@@ -991,6 +1035,7 @@ div button.gm-control-active {
 }
 
 .atbalsta h4 {
+  text-align: left;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -999,6 +1044,7 @@ div button.gm-control-active {
 }
 
 .atbalsta p {
+  text-align: right;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -1043,6 +1089,8 @@ div button.gm-control-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .dropdown {
@@ -1085,6 +1133,16 @@ div button.gm-control-active {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+
+#riga,
+#edinasana {
+  border-top: 1px solid black;
+}
+
+footer.footer-color.map-footer {
+  margin-top: -20px;
+  z-index: 30;
 }
 
 .title p {
@@ -1318,11 +1376,26 @@ div button.gm-control-active {
   .stories button {
     display: none;
   }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 110px;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
   .inner-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .inner-container .teksts {
+    top: 85%;
+    width: 85%;
+    margin-right: 40px;
   }
   .cell p {
     top: 55%;
@@ -1387,6 +1460,7 @@ div button.gm-control-active {
   .navbar nav a.logo {
     margin: 0;
     padding: 0;
+    z-index: 30;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -1398,10 +1472,7 @@ div button.gm-control-active {
     color: white;
   }
   .ripped {
-    top: 85px;
-  }
-  .video .video-btn {
-    width: 100px;
+    top: 7.5%;
   }
   .text {
     font-size: 18px;
@@ -1545,6 +1616,9 @@ div button.gm-control-active {
     display: block;
     margin-bottom: 20px;
     font-weight: none;
+  }
+  footer .footer-2 .p-1 span {
+    display: block;
   }
 }
 
