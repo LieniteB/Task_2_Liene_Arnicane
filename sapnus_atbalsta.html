@@ -56,10 +56,10 @@
             <div class="dropdown">
                 <p>Uzņēmuma atrašanās vieta</p>
                 <button onclick="dropdown()" class="dropbtn">Izvēlies</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a id="riga" href="#">Rīga</a>
-                  <a id="jelgava"href="#">Jelgava</a>
-                  <a id="ogre" href="#">Ogre</a>
+                <div id="myDropdown"class="dropdown-content">
+                  <a id="riga"  href="#">Rīga</a>
+                  <a id="jelgava"  href="#">Jelgava</a>
+                  <a id="ogre"  href="#">Ogre</a>
                 </div>
                 <img src="assets/img/bulta.png" alt="">
 
@@ -67,11 +67,11 @@
               
               <div class="dropdown">
                     <p>Uzņēmuma veids</p>
-                    <button onclick="dropdown2()" class="dropbtn">Izvēlies</button>
+                    <button onclick="dropdown2()" class="dropbtn dropbtn2">Izvēlies</button>
                 <div id="myDropdown2" class="dropdown-content">
-                  <a class="btn"id="edinasana" onclick="filterSelection('edinasana')"href="#">Ēdināšana</a>
-                  <a class="btn"id="skaistumkopsana" onclick="filterSelection('skaistumkopsana')" href="#">Skaistumkopšana</a>
-                  <a class="btn"id="atputa" onclick="filterSelection('atputa')" href="#">Atpūta</a>
+                  <a class="btn"id="edinasana" onclick="filterSelection('edinasana'); shows('Ēdināšana')" href="#">Ēdināšana</a>
+                  <a class="btn"id="skaistumkopsana" onclick="filterSelection('skaistumkopsana'); shows('Skaistumkopšana')" href="#">Skaistumkopšana</a>
+                  <a class="btn"id="atputa" onclick="filterSelection('atputa'); shows('Atpūta')" href="#">Atpūta</a>
                       
                     </div>
                     <img src="assets/img/bulta.png" alt="">
@@ -87,7 +87,7 @@
             <div class="edinasana atbalsta">
                 <img src="assets/img/kurts.jpg" alt="">
                 <h4>Kurts coffee</h4>
-                <p>+371 23202079 <br> Cēsu iela 20. Tērbates iela 2i</p>
+                <p>+371 23202079 <br> Cēsu iela 20,<br> Tērbates iela 2i</p>
             </div>
             <div class="edinasana atbalsta">
                 <img src="assets/img/bagels.png" alt="">
@@ -111,7 +111,7 @@
                 
         
 
-        <footer class="footer-color">
+        <footer class="footer-color map-footer">
             <div class="footer-1">
                 <div class="golden-logo"><img src="assets/img/GoldenV2Logo 3.png" alt=""></div>
                 <div class="links">
@@ -147,16 +147,14 @@
                 </div>
             </div>
             <div class="footer-2">
-                <p class="p-1">© SparkleHeart 2020. <br> Visas tiesības aizsargātas.</p>
+                <p class="p-1">© SparkleHeart 2020. <span>Visas tiesības aizsargātas.</span></p>
                 <p class="p-2">Privātuma politika</p>
             </div>
         </footer>
-
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5d4d_05q5jujCBqTTslNTYtGcGtKLhiI&callback=initMap"></script>
         
         <script src="assets/js/map_script.js"></script>
         <script src="assets/js/script.js"></script>
-        
         
             
                 

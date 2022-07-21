@@ -187,12 +187,19 @@ riga.onclick = function(){
 city.classList.remove("hide")
 city2.classList.add("hide")
 city3.classList.add("hide")
+
+document.querySelector(".dropbtn").innerText = "Rīga";
+document.querySelector(".dropbtn").style.fontWeight = "bold";
+
 }
 jelgava.onclick = function(){
 
 city2.classList.remove("hide");
 city.classList.add("hide")
 city3.classList.add("hide")
+
+document.querySelector(".dropbtn").innerText = "Jelgava";
+document.querySelector(".dropbtn").style.fontWeight = "bold";
 }
 ogre.onclick = function(){
 
@@ -200,4 +207,9 @@ ogre.onclick = function(){
 city.classList.add("hide")
 city2.classList.add("hide")
 city3.classList.remove("hide");
+
+document.querySelector(".dropbtn").innerText = "Ogre";
+document.querySelector(".dropbtn").style.fontWeight = "bold";
 }
+
+

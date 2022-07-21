@@ -8,6 +8,14 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     display:flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+div.container{
+    margin-left: 0;
+    margin-top: 0;
 }
 
 h1 {
@@ -193,26 +201,17 @@ nav {
 
 .ripped {
     position: absolute;
-    top:50px;
+    top:75px;
     width:100%;
-    z-index: -1;
+    z-index: 2;
 }
 
 .video {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top:0;
-    img {
-        width: 100%;
-        z-index: -2;
+    video{
+        
+        z-index: -10;
     }
-    .video-btn{
-        position: absolute;
-        width: 50px;
-        top: 40%;
-        text-align: center;
-    }
+    
 }
 
 .text {
@@ -234,6 +233,7 @@ nav {
     div img{
         width: 100%;
         height: auto;
+        margin-bottom: -5px;
     }
 
     .image{
@@ -313,6 +313,7 @@ nav {
     text-align: center;
     margin:auto;
     
+    
     h2{
         font-family: "Oswald";
         font-weight: 500;
@@ -321,6 +322,7 @@ nav {
         text-align: center;
         margin-bottom: 20px;
         margin-top:125px;
+        color: #2F4858;
     }
 
     input{
@@ -334,22 +336,36 @@ nav {
         border-radius: 6px;
         border:none;
         margin: 10px;
-
-        input#checkbox{
-            width: 20px;
-        }
+        color: #2F4858;
+    }
+    ::placeholder {
+        color: #2F4858;
+        opacity: 1;
+    }
+    :-ms-input-placeholder {
+        color: #2F4858;
+    }
+    ::-ms-input-placeholder {
+        color:#2F4858;
     }
     #question {
         padding-bottom: 200px;
+        
+
     }
     input#checkbox{
         width: 15px;
         float: left;
         margin-right: 20px;
+        margin-bottom: 80px;
+        
     }
     .check{
         text-align: left;
         font-size: 15px;
+        label{
+            color:#2F4858;
+        }
     }
 
     p{
@@ -357,6 +373,7 @@ nav {
         font-weight: 400;
         text-align: left;
         font-size: 15px;
+        color: #2F4858;
     }
     
     .submit{
@@ -391,20 +408,21 @@ nav {
         margin: 3.5rem auto 11rem;
         width: 100%;
         justify-content: space-around;
-        .linearis{
-            min-width: 6%;
-            width: 6%;
-        }
+
+        
         img{
-            width: 15%;
+            width: 20%;
             max-width: 40%;
             height: auto;
             max-height: 100%;
             vertical-align: middle;
             margin: 0 2.3rem 0 2.4rem;
-
-
         }  
+        
+        .linearis{
+            min-width: 6%;
+            width: 6%;
+        }
     }
     h3{
         text-transform: uppercase;
@@ -420,7 +438,55 @@ nav {
 }
 
 
+//cookie stili
+.cookie-container {
+    width: 820px;
+    display: flex;
+    position: fixed;
+    bottom: -100%;
+    left:0;
+    right:0;
+    background: #2F4858;
+    color: #ffffff;
+    padding: 30px 46px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 
+    transition: 400ms;
+
+    p{
+        color: #ffffff;
+        width: 450px;
+        a{
+            font-weight: bold;
+            color: #ffffff;
+        }
+    }
+
+    .cookie-button,
+    .cookie-button2{
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 10px 30px;
+        text-align: center;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cookie-button{
+        background-color:#FFA800;
+        color: #ffffff;
+    }
+}
+
+.cookie-container.cookie-active{
+    bottom: 0;
+}
 
 //footer
 .footer-color{background-color: white;}
@@ -495,6 +561,7 @@ footer{
         line-height: 13px; 
         margin-bottom: 30px;
         .p-1{
+            
             float: left;
             margin-top:0;
              
@@ -507,6 +574,50 @@ footer{
 
     }
 }
+//404 lapas stili
+.error_404 {
+    background-color: rgba(255, 203, 102, 1);
+    padding: 175px;
+    text-align: center;
+    h1{
+        margin: 0;
+        color: white;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 142px;
+
+        text-align: center;
+    }
+    h3{text-transform: none;
+        font-weight: bold;
+    }
+    p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    button{
+        color: rgba(255, 203, 102, 1);
+        background-color: #ffffff;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 50px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 30px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
 //ideja lapas stili
 .ideja-text {
     h1 {
@@ -526,7 +637,7 @@ footer{
 
     p{
         position: absolute;
-        top: 63%;
+        bottom: 10%;
         left:20%;
         font-weight: bold;
         color: white;
@@ -536,8 +647,8 @@ footer{
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 1.125em;
+        line-height: 1.5em;
         
     }
     .ripped-4{
@@ -546,7 +657,8 @@ footer{
         position: absolute;
     }
     .juris-img{
-        width: 100%;
+        max-width:100%;
+        height: auto;
         z-index: -3;  
     }
     .ripped-5 {
@@ -570,6 +682,8 @@ footer{
     padding: 80px;
     text-align: left;
     width: 50%;
+    color: #2F4858;
+    h3{text-transform: none;}
 
     .italics{
         font-family: 'Montserrat';
@@ -613,7 +727,12 @@ footer{
   }
   
 @media only screen and (min-width: 782px) {
+    //stili lapai ideja
     .juris {
+        p{
+            font-size: 1.5em;
+            bottom: 20%;
+        }
         .ripped-5{
             top: -30px;
         }
@@ -639,16 +758,22 @@ footer{
     margin-bottom: 0px;
     .sapnis {
         text-align: center;
-        width: 40%;
-    }
-    button {
-        cursor: pointer;
-        padding:13px 55px ;
-        background-color: #FFA800;
-        border: none;
-        border-radius: 30px;
-        color: white;
-        margin: 50px;
+        width: 70%;
+        p{
+            color: #2F4858;
+        }
+    
+        button.text2 {
+            cursor: pointer;
+            padding:13px 55px ;
+            background-color: #FFA800;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            }   
     }
 }
 
@@ -659,6 +784,7 @@ footer{
 @media only screen and (min-width: 782px) {
     .piesaki-sapni {
         flex-direction: row;
+        
         .sapnis{
             padding: 100px;
             padding-bottom: 70px;
@@ -709,7 +835,7 @@ footer{
     text-align: center;
 
     img{
-        width: 12%;
+        width: 35%;
         max-height: 100%;
     }
     .content {
@@ -748,9 +874,15 @@ footer{
     flex-direction: column;
     margin-top: 3.75em;
     margin-bottom: 3.75em;
+    margin-left: 3em;
+    margin-right: 3em;
     text-align: center;
 
     
+}
+
+footer.footer-color{
+    margin-top: 120px;
 }
 
 @media only screen and (min-width: 782px) {
@@ -760,6 +892,7 @@ footer{
         img{
             margin-left: 20em;
             margin-right: 3.875em;
+            width: 10%;
             
         }
         .content {
@@ -818,7 +951,7 @@ footer{
         width: 120px;
         height: 100%;
         margin-right: 80px;
-        background-color: #FFA800;
+        
     }
 
     h3{
@@ -833,23 +966,50 @@ div.gm-style-iw-t::after {
     display: none;
 }
 div.gm-style-iw.gm-style-iw-c {
-    background-color: #FFA800;
-    opacity: 77%;
+    background-color: rgba(255, 168, 0, 0.5);
     border-radius: 20px;
 
 }
 div.gm-style-iw-d{
-    background-color: #FFA800;
-    
+
 }
-button.gm-ui-hover-effect{
-    display: none;
+#map-canvas .gm-style > .gmnoprint > .gmnoprint {
+    background-color: rgba(255, 168, 0, 0.5);
 }
-div button.gm-control-active{
-    background-color: #FFA800;
-    color: #FFA800;
+
+button.gm-control-active{
+    background-color: rgba(255, 168, 0, 0.5);
     border-radius: 15px;
 }
+
+#map .gm-style .gm-style-mtc,
+#map .gm-style .gm-svpc,
+.gm-fullscreen-control {
+    display: none !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint {
+    margin-top: -190px !important;
+    left: -69px !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] {
+    width: auto !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] .gm-control-active {
+    margin-top: 21px !important;
+    width: 56.82px !important;
+    height: 57.14px !important;
+    background: rgba(255, 168, 0, 0.5) !important;
+    border-radius: 14px;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] .gm-control-active[aria-label="Zoom in"] {
+    margin-bottom: 20px !important;
+}
+#map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] div {
+    display: none;
+}
+
 
 #map,
 #map-2,
@@ -873,8 +1033,8 @@ div button.gm-control-active{
     margin: auto;
   }
   .atbalsta{
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
+    align-items: left;
     margin: 30px;
     display: none;
     
@@ -883,6 +1043,7 @@ div button.gm-control-active{
     max-width: 120px;
   }
   .atbalsta h4{
+      text-align: left;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -890,6 +1051,7 @@ div button.gm-control-active{
     line-height: 29px;
   }
   .atbalsta p {
+      text-align: right;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -900,7 +1062,6 @@ div button.gm-control-active{
     display: flex;
   }
   
-
 /* Dropdown Button */
 .dropbtn {
   background-color:#ececec;
@@ -927,6 +1088,7 @@ div button.gm-control-active{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .dropdown {
   position: relative;
@@ -949,6 +1111,7 @@ div button.gm-control-active{
   background-color: #f1f1f1;
   min-width: 288px;
   z-index: 25;
+  
 }
 
 /* Links inside the dropdown */
@@ -964,7 +1127,14 @@ div button.gm-control-active{
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-
+#riga,
+#edinasana{
+    border-top: 1px solid black;
+}
+footer.footer-color.map-footer {
+    margin-top:-20px;
+    z-index: 30;
+}
 
 
 //stili lapai 99 iedvesmas stāsti
@@ -1086,6 +1256,7 @@ div button.gm-control-active{
         margin: 50px;
     }
 }
+
 .inner-container {
     display: flex;
     flex-direction: row;
@@ -1095,14 +1266,23 @@ div button.gm-control-active{
     text-align: center;
     color: white;
     margin-bottom: 25px;
-    .gradient {
-        background-image: linear-gradient(180deg, rgba(47, 72, 88, .8) 18.63%, 
-        rgba(47, 72, 88, 0) 49.21%);
-        z-index: 2;
-        
+    .picture1{
+        background-image: linear-gradient(rgba(255,0,0,0), rgba(47, 72, 88, .8)),
+                        url("../img/juris-gogulis.png");
+        width: 280px;
+        height: 360px;
     }
-    img{
-        z-index: -1;
+    .picture2{
+        background-image: linear-gradient(rgba(255,0,0,0), rgba(47, 72, 88, .8)),
+                        url("../img/girts-cerins.png");
+        width: 280px;
+        height: 360px;
+    }
+    .picture3{
+        background-image: linear-gradient(rgba(255,0,0,0), rgba(47, 72, 88, .8)),
+                        url("../img/janis-zurgis.png");
+        width: 280px;
+        height: 360px;
     }
 }
 .teksts{
@@ -1148,8 +1328,23 @@ div button.gm-control-active{
     .stories button {
         display: none;
     }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 110px;
+        margin-left: 110px;
+        margin-top: 50px;
+
+    }
     .inner-container {
         flex-direction: row;
+        
+
+        .teksts{
+            top: 85%;
+            width: 85%;
+            margin-right: 40px;
+        }
     }
     .cell p {
         top: 55%;
@@ -1202,7 +1397,8 @@ div button.gm-control-active{
         
         }
         a.logo{margin:0;
-        padding:0;}
+        padding:0;
+        z-index:30}
 
         ul.primary-nav {
             margin: 0;
@@ -1215,8 +1411,8 @@ div button.gm-control-active{
                 color: white;
         }
     }
-.ripped{top: 85px;}
-.video .video-btn{width: 100px;}
+.ripped{top: 7.5%;}
+
 .text{
     font-size: 18px;
     line-height: 22px;
@@ -1285,6 +1481,7 @@ div button.gm-control-active{
         width: 15px;
         float: left;
         margin-right: 20px;
+        
     }
     .check{
         text-align: left;
@@ -1340,6 +1537,11 @@ footer{
         display: block;
         margin-bottom:20px;
         font-weight: none;
+        .p-1{
+            span{
+                display: block;
+            }
+        }
     }
     
 }
