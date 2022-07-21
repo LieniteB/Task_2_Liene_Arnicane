@@ -87,19 +87,6 @@ styles = [{
 },]
 
 
-function initMap(){
-var options = {
-    zoom:13,
-    center: {lat:56.9496, lng:24.1052},
-    styles: styles,
-    panControl: false,
-    zoomControl: true,
-    mapTypeControl: false,
-    scaleControl: false,
-    streetViewControl: false,
-    overviewMapControl: false,
-    rotateControl: false,
-}
 var options2 = {
     zoom:14,
     center:{lat:56.6511, lng:23.7214},
@@ -125,55 +112,6 @@ var options3 = {
     rotateControl: false,
 }
 
-var map = new google.maps.Map(document.getElementById("map"), options);
-var map2 = new google.maps.Map(document.getElementById("map-2"), options2);
-var map3 = new google.maps.Map(document.getElementById("map-3"), options3);
-
-
-addMarker({
-    coords:{lat:56.96578807365938, lng:24.140575215341684}, 
-    content:"<div class='infoWindow'><img src='../assets/img/auch.png'></img> <div><h3>AUCH beauty home</h3><p class='text2'>+371 28361686, +371 23202079<br> auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>",
-    category: "skaistumkopsana",
-    });
-addMarker({
-    coords:{lat: 56.95652050993442,  lng:24.119182791628553}, 
-    content:"<div class='infoWindow'><img src='../assets/img/bagels.png'></img> <div><h3>Big Bad Bagels</h3><p class='text2'>+371 24556585 <br> bbb@bigbadbagels.com<br>Baznīcas iela 8, Rīga</p></div></div>",
-    category: "edinasana",
-});
-addMarker({
-    coords:{lat: 56.9515797144434, lng:24.120647277430894}, 
-    content: "<div class='infoWindow'><img src='../assets/img/kurts.jpg'></img> <div><h3>Kurts coffee</h3><p class='text2'>+371 23202079 <br> kurtscoffee.riga@gmail.com<br>Tērbates iela 2J, Rīga</p></div></div>",
-    category:"edinasana",
-});
-addMarker({
-    coords:{lat: 56.95817247355672,lng:24.191016421975043}, 
-    content:"<div class='infoWindow'><img src='../assets/img/purch.jpg'></img> <div><h3>Purch restaurant</h3><p class='text2'>+371 20200400<br>Dzelzavas iela 51A, Rīga</p></div></div>",
-    category: "edinasana",
-});
-addMarker({
-    coords:{lat: 56.958998119109765,lng:24.119677850834346}, 
-    content:"<div class='infoWindow'><img src='../assets/img/grieze.png'></img> <div><h3>Grieze</h3><p class='text2'>+371 20015220<br> grieze@grieze.lv<br>Ģertrūdes iela 2 - k2, Rīga</p></div></div>",
-    category: "skaistumkopsana",
-});
-
-
-function addMarker(props){
-var marker = new google.maps.Marker({
-    position:props.coords,
-    map:map,
-    icon: href="../assets/img/marker.png"
-});
-
-var infoWindow = new google.maps.InfoWindow({
-    content:props.content,
-
-});
-
-marker.addListener("click", function(){
-    infoWindow.open(map, marker);
-})
-}
-}
 
 var riga = document.getElementById("riga");
 var jelgava = document.getElementById("jelgava");
@@ -213,3 +151,81 @@ document.querySelector(".dropbtn").style.fontWeight = "bold";
 }
 
 
+var gmarkers1 = [];
+var markers1 = [];
+
+
+markers1 = [
+    ['0', "<div class='infoWindow'><img src='../assets/img/auch.png'></img> <div><h3>AUCH beauty home</h3><p class='text2'>+371 28361686, +371 23202079<br> auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>", 56.96578807365938, 24.140575215341684, 'skaistumkopsana'],
+    ['1', "<div class='infoWindow'><img src='../assets/img/bagels.png'></img> <div><h3>Big Bad Bagels</h3><p class='text2'>+371 24556585 <br> bbb@bigbadbagels.com<br>Baznīcas iela 8, Rīga</p></div></div>", 56.95652050993442, 24.119182791628553, 'edinasana'],
+    ['2', "<div class='infoWindow'><img src='../assets/img/kurts.jpg'></img> <div><h3>Kurts coffee</h3><p class='text2'>+371 23202079 <br> kurtscoffee.riga@gmail.com<br>Tērbates iela 2J, Rīga</p></div></div>", 56.9515797144434, 24.120647277430894, 'edinasana'],
+    ['3', "<div class='infoWindow'><img src='../assets/img/purch.jpg'></img> <div><h3>Purch restaurant</h3><p class='text2'>+371 20200400<br>Dzelzavas iela 51A, Rīga</p></div></div>", 56.95817247355672, 24.191016421975043, 'edinasana'],
+    ['4', "<div class='infoWindow'><img src='../assets/img/grieze.png'></img> <div><h3>Grieze</h3><p class='text2'>+371 20015220<br> grieze@grieze.lv<br>Ģertrūdes iela 2 - k2, Rīga</p></div></div>", 56.958998119109765, 24.119677850834346, 'skaistumkopsana'],
+];
+
+function initMap() {
+    var center = new google.maps.LatLng(56.9496, 24.1052);
+    var mapOptions = {
+        zoom: 12,
+        center: center,
+        styles:styles,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+    
+    
+
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    var map2 = new google.maps.Map(document.getElementById("map-2"), options2);
+    var map3 = new google.maps.Map(document.getElementById("map-3"), options3);
+
+    for (i = 0; i < markers1.length; i++) {
+        addMarker(markers1[i])
+        
+    }
+}
+
+// /**
+//  * Function to add marker to map
+//  */
+
+function addMarker(marker) {
+    var category = marker[4];
+    var title = marker[1];
+    var pos = new google.maps.LatLng(marker[2], marker[3]);
+    var content = marker[1];
+    var infowindow = new google.maps.InfoWindow({
+        content: ''
+        });
+    marker1 = new google.maps.Marker({
+        title: title,
+        position: pos,
+        category: category,
+        map: map,
+        icon: href="./assets/img/marker.png",
+    });
+
+    gmarkers1.push(marker1);
+
+    // Marker click listener
+    google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
+        return function () {
+            console.log('Gmarker 1 gets pushed');
+            infowindow.setContent(content);
+            infowindow.open(map, marker1);
+        }
+    })(marker1, content));
+}
+filterMarkers = function (category) {
+    for (i = 0; i < markers1.length; i++) {
+        marker = gmarkers1[i];
+        // If is same category or category not picked
+        if (marker.category == category || category.length === 0) {
+            marker.setVisible(true);
+        }
+        // Categories don't match 
+        else {
+            marker.setVisible(false);
+        }
+    }
+}
+initMap();

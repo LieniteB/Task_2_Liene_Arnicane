@@ -188,26 +188,8 @@ nav li a:hover {
   z-index: 2;
 }
 
-<<<<<<< HEAD
-.video {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 0;
-}
-.video img {
-  width: 100%;
-  z-index: -2;
-}
-.video .video-btn {
-  position: absolute;
-  width: 50px;
-  top: 40%;
-  text-align: center;
-=======
 .video video {
   z-index: -10;
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
 }
 
 .text {
@@ -318,38 +300,23 @@ nav li a:hover {
   margin: 10px;
   color: #2F4858;
 }
-<<<<<<< HEAD
-.form input input#checkbox {
-  width: 20px;
-=======
-
-.form ::-webkit-input-placeholder {
+.form ::-moz-placeholder {
   color: #2F4858;
   opacity: 1;
 }
-
 .form :-ms-input-placeholder {
   color: #2F4858;
   opacity: 1;
 }
-
-.form ::-ms-input-placeholder {
-  color: #2F4858;
-  opacity: 1;
-}
-
 .form ::placeholder {
   color: #2F4858;
   opacity: 1;
 }
-
 .form :-ms-input-placeholder {
   color: #2F4858;
 }
-
 .form ::-ms-input-placeholder {
   color: #2F4858;
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
 }
 .form #question {
   padding-bottom: 200px;
@@ -364,14 +331,9 @@ nav li a:hover {
   text-align: left;
   font-size: 15px;
 }
-<<<<<<< HEAD
-=======
-
 .form .check label {
   color: #2F4858;
 }
-
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
 .form p {
   margin: 10px;
   font-weight: 400;
@@ -408,14 +370,6 @@ nav li a:hover {
   width: 100%;
   justify-content: space-around;
 }
-<<<<<<< HEAD
-.atbalst .logos .linearis {
-  min-width: 6%;
-  width: 6%;
-}
-=======
-
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
 .atbalst .logos img {
   width: 20%;
   max-width: 40%;
@@ -424,15 +378,10 @@ nav li a:hover {
   vertical-align: middle;
   margin: 0 2.3rem 0 2.4rem;
 }
-<<<<<<< HEAD
-=======
-
 .atbalst .logos .linearis {
   min-width: 6%;
   width: 6%;
 }
-
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
 .atbalst h3 {
   text-transform: uppercase;
   font-family: "Oswald";
@@ -446,8 +395,6 @@ nav li a:hover {
 
 .cookie-container {
   width: 820px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
   bottom: -100%;
@@ -456,40 +403,32 @@ nav li a:hover {
   background: #2F4858;
   color: #ffffff;
   padding: 30px 46px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
   text-align: center;
-  -webkit-transition: 400ms;
   transition: 400ms;
 }
-
 .cookie-container p {
   color: #ffffff;
   width: 450px;
 }
-
 .cookie-container p a {
   font-weight: bold;
   color: #ffffff;
 }
-
 .cookie-container .cookie-button,
 .cookie-container .cookie-button2 {
   cursor: pointer;
   border-radius: 20px;
   padding: 10px 30px;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
 }
-
 .cookie-container .cookie-button {
   background-color: #FFA800;
   color: #ffffff;
@@ -582,37 +521,33 @@ footer .footer-2 .p-2 {
 }
 
 .error_404 {
-  background-color: #ffcb66;
+  background-color: rgb(255, 203, 102);
   padding: 175px;
   text-align: center;
 }
-
 .error_404 h1 {
   margin: 0;
   color: white;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 142px;
   text-align: center;
 }
-
 .error_404 h3 {
   text-transform: none;
   font-weight: bold;
 }
-
 .error_404 p {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
 }
-
 .error_404 button {
-  color: #ffcb66;
+  color: rgb(255, 203, 102);
   background-color: #ffffff;
   border: none;
   border-radius: 25px;
@@ -620,7 +555,7 @@ footer .footer-2 .p-2 {
   text-align: center;
   cursor: pointer;
   margin-top: 30px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -686,7 +621,6 @@ footer .footer-2 .p-2 {
   width: 50%;
   color: #2F4858;
 }
-
 .mySlides h3 {
   text-transform: none;
 }
@@ -767,16 +701,10 @@ footer .footer-2 .p-2 {
   text-align: center;
   width: 70%;
 }
-<<<<<<< HEAD
-.piesaki-sapni button {
-=======
-
 .piesaki-sapni .sapnis p {
   color: #2F4858;
 }
-
 .piesaki-sapni .sapnis button.text2 {
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
   cursor: pointer;
   padding: 13px 55px;
   background-color: #FFA800;
@@ -989,8 +917,7 @@ button.gm-control-active {
 #map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] {
   width: auto !important;
   background-color: transparent !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 #map .gm-style .gm-bundled-control .gmnoprint div[draggable=false] .gm-control-active {
@@ -1032,17 +959,8 @@ button.gm-control-active {
 }
 
 .atbalsta {
-<<<<<<< HEAD
   justify-content: space-between;
-  align-items: center;
-=======
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
+  align-items: left;
   margin: 30px;
   display: none;
 }
@@ -1052,12 +970,8 @@ button.gm-control-active {
 }
 
 .atbalsta h4 {
-<<<<<<< HEAD
-  font-family: "Montserrat";
-=======
   text-align: left;
-  font-family: 'Montserrat';
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -1065,12 +979,8 @@ button.gm-control-active {
 }
 
 .atbalsta p {
-<<<<<<< HEAD
-  font-family: "Montserrat";
-=======
   text-align: right;
-  font-family: 'Montserrat';
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1104,19 +1014,9 @@ button.gm-control-active {
 /* The container <div> - needed to position the dropdown content */
 .dropdown_container {
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
+  flex-wrap: wrap;
 }
 
 .dropdown {
@@ -1304,35 +1204,20 @@ footer.footer-color.map-footer {
   color: white;
   margin-bottom: 25px;
 }
-<<<<<<< HEAD
-.inner-container .gradient {
-  background-image: linear-gradient(180deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
-  z-index: 2;
-}
-.inner-container img {
-  z-index: -1;
-=======
-
 .inner-container .picture1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(rgba(47, 72, 88, 0.8))), url("../img/juris-gogulis.png");
   background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(47, 72, 88, 0.8)), url("../img/juris-gogulis.png");
   width: 280px;
   height: 360px;
 }
-
 .inner-container .picture2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(rgba(47, 72, 88, 0.8))), url("../img/girts-cerins.png");
   background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(47, 72, 88, 0.8)), url("../img/girts-cerins.png");
   width: 280px;
   height: 360px;
 }
-
 .inner-container .picture3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(rgba(47, 72, 88, 0.8))), url("../img/janis-zurgis.png");
   background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(47, 72, 88, 0.8)), url("../img/janis-zurgis.png");
   width: 280px;
   height: 360px;
->>>>>>> 4db0987b4e5e3d413e8969fc11789761b146f955
 }
 
 .teksts {
@@ -1383,11 +1268,8 @@ footer.footer-color.map-footer {
     display: none;
   }
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-right: 110px;
     margin-left: 110px;
     margin-top: 50px;
