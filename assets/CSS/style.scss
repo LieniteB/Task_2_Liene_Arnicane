@@ -207,11 +207,9 @@ nav {
 }
 
 .video {
-    video{
-        
+    video{ 
         z-index: -10;
     }
-    
 }
 
 .text {
@@ -440,7 +438,7 @@ nav {
 
 //cookie stili
 .cookie-container {
-    width: 820px;
+    width: 810px;
     display: flex;
     position: fixed;
     bottom: -100%;
@@ -468,6 +466,7 @@ nav {
     .cookie-button,
     .cookie-button2{
         cursor: pointer;
+        border: none;
         border-radius: 20px;
         padding: 10px 30px;
         text-align: center;
@@ -1139,6 +1138,7 @@ footer.footer-color.map-footer {
 .title p{
     margin: 80px 20px;
 }
+
 #grid,
 #more {
     display: grid;
@@ -1330,13 +1330,11 @@ footer.footer-color.map-footer {
         display: flex;
         justify-content: space-around;
         margin-right: 110px;
-        margin-left: 110px;
-        margin-top: 50px;
 
     }
     .inner-container {
         flex-direction: row;
-        
+        margin-top: 50px;
 
         .teksts{
             top: 85%;
@@ -1409,7 +1407,7 @@ footer.footer-color.map-footer {
                 color: white;
         }
     }
-.ripped{top: 7.5%;}
+.ripped{top: 10.5%;}
 
 .text{
     font-size: 18px;
