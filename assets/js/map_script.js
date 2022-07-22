@@ -156,11 +156,11 @@ var markers1 = [];
 
 
 markers1 = [
-    ['0', "<div class='infoWindow'><img src='../assets/img/auch.png'></img> <div><h3>AUCH beauty home</h3><p class='text2'>+371 28361686, +371 23202079<br> auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>", 56.96578807365938, 24.140575215341684, 'skaistumkopsana'],
-    ['1', "<div class='infoWindow'><img src='../assets/img/bagels.png'></img> <div><h3>Big Bad Bagels</h3><p class='text2'>+371 24556585 <br> bbb@bigbadbagels.com<br>Baznīcas iela 8, Rīga</p></div></div>", 56.95652050993442, 24.119182791628553, 'edinasana'],
-    ['2', "<div class='infoWindow'><img src='../assets/img/kurts.jpg'></img> <div><h3>Kurts coffee</h3><p class='text2'>+371 23202079 <br> kurtscoffee.riga@gmail.com<br>Tērbates iela 2J, Rīga</p></div></div>", 56.9515797144434, 24.120647277430894, 'edinasana'],
-    ['3', "<div class='infoWindow'><img src='../assets/img/purch.jpg'></img> <div><h3>Purch restaurant</h3><p class='text2'>+371 20200400<br>Dzelzavas iela 51A, Rīga</p></div></div>", 56.95817247355672, 24.191016421975043, 'edinasana'],
-    ['4', "<div class='infoWindow'><img src='../assets/img/grieze.png'></img> <div><h3>Grieze</h3><p class='text2'>+371 20015220<br> grieze@grieze.lv<br>Ģertrūdes iela 2 - k2, Rīga</p></div></div>", 56.958998119109765, 24.119677850834346, 'skaistumkopsana'],
+    ['0', "<div class='infoWindow'><img src='./assets/img/auch.png'></img> <div><h3>AUCH beauty home</h3><p class='text2'>+371 28361686, +371 23202079<br> auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>", 56.96578807365938, 24.140575215341684, 'skaistumkopsana'],
+    ['1', "<div class='infoWindow'><img src='./assets/img/bagels.png'></img> <div><h3>Big Bad Bagels</h3><p class='text2'>+371 24556585 <br> bbb@bigbadbagels.com<br>Baznīcas iela 8, Rīga</p></div></div>", 56.95652050993442, 24.119182791628553, 'edinasana'],
+    ['2', "<div class='infoWindow'><img src='./assets/img/kurts.jpg'></img> <div><h3>Kurts coffee</h3><p class='text2'>+371 23202079 <br> kurtscoffee.riga@gmail.com<br>Tērbates iela 2J, Rīga</p></div></div>", 56.9515797144434, 24.120647277430894, 'edinasana'],
+    ['3', "<div class='infoWindow'><img src='./assets/img/purch.jpg'></img> <div><h3>Purch restaurant</h3><p class='text2'>+371 20200400<br>Dzelzavas iela 51A, Rīga</p></div></div>", 56.95817247355672, 24.191016421975043, 'edinasana'],
+    ['4', "<div class='infoWindow'><img src='./assets/img/grieze.png'></img> <div><h3>Grieze</h3><p class='text2'>+371 20015220<br> grieze@grieze.lv<br>Ģertrūdes iela 2 - k2, Rīga</p></div></div>", 56.958998119109765, 24.119677850834346, 'skaistumkopsana'],
 ];
 
 function initMap() {

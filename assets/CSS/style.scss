@@ -946,6 +946,7 @@ footer.footer-color{
     display: flex;
     align-items: center;
     opacity: 100%;
+    margin-right: 20px;
     img{
         width: 120px;
         height: 100%;
@@ -960,6 +961,7 @@ footer.footer-color{
         }
     p{text-align: right;}
 }
+.gm-style-iw, .gm-style-iw div {     overflow:hidden!important; }
 
 div.gm-style-iw-t::after {
     display: none;
@@ -1558,4 +1560,11 @@ footer{
         .video img {width: 1366px;}
         .video .video-btn{width: 86px;}
     }
+}
+
+//priekš google maps infowindow scroll
+.scrollFIx {
+    line-height: 1.35;
+    overflow: hidden;
+    white-space: nowrap;
 }

@@ -871,6 +871,7 @@ footer.footer-color {
   display: flex;
   align-items: center;
   opacity: 100%;
+  margin-right: 20px;
 }
 .infoWindow img {
   width: 120px;
@@ -884,6 +885,10 @@ footer.footer-color {
 }
 .infoWindow p {
   text-align: right;
+}
+
+.gm-style-iw, .gm-style-iw div {
+  overflow: hidden !important;
 }
 
 div.gm-style-iw-t::after {
@@ -1494,4 +1499,9 @@ footer.footer-color.map-footer {
   .wrapper .video .video-btn {
     width: 86px;
   }
+}
+.scrollFIx {
+  line-height: 1.35;
+  overflow: hidden;
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */
